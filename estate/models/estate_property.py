@@ -7,16 +7,16 @@ class EstateProperty(models.Model):
     _description = "Property Listing"
 
     name = fields.Char(required=True)
-    description = field.Text()
-    postcode = field.Char()
-    date_availability = field.Date()
-    expected_price = field.Float(required=True)
-    selling_price = field.Float()
-    bedrooms = field.Integer()
-    living_area = field.Integer()
-    facades = field.Integer()
-    garage = field.Boolean()
-    garden = field.Boolean()
+    description = fields.Text()
+    postcode = fields.Char()
+    date_availability = fields.Date()
+    expected_price = fields.Float(required=True)
+    selling_price = fields.Float()
+    bedrooms = fields.Integer()
+    living_area = fields.Integer()
+    facades = fields.Integer()
+    garage = fields.Boolean()
+    garden = fields.Boolean()
     garden_area = fields.Integer()
     garden_orientation = fields.Selection(
         string='Garden Orientation',
