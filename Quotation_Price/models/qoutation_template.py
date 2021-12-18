@@ -8,5 +8,5 @@ class ProductPricing(models.Model):
     _inherits = {'sale.order':'price_unit'}
 
 class QoutationPrice(models.Model):
-_inherit = 'qoutation.price'
+    _inherit = 'qoutation.price'
     unit_price = fields.Float(string='Unit Price')
