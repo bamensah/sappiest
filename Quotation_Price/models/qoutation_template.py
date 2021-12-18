@@ -4,5 +4,5 @@
 from odoo import api, fields, models
 
 class ProductPricing(models.Model):
-    _inherit = ['sale.order.template', 'sale.order']
+    _inherit = ['sale.order.template']
     price_unit = fields.Float('Unit Price')
