@@ -2,11 +2,11 @@
 <odoo>
   <data>
     <record id="sale_order_template_view_form2_inherit" model="ir.ui.view">
-    <field name="name">sale.order.template.form2.inherit</field>
+    <field name="name">sale.order.template.form.inherit</field>
     <field name="model">sale.order.template</field>
     <field name="inherit_id" ref="sale_management.sale_order_template_view_form"/>
     <field name="arch" type="xml">
-      <xpath expr="//field[@name='sale_order_template_line_ids']//field[@name='product_uom_qty']" positon="after">
+      <xpath expr="/form/sheet/notebook/page/field[@name='sale_order_template_line_ids']/field[@name='product_uom_category_id']" positon="after">
         <field name='unit_price'/>
       </xpath>
     </field>
