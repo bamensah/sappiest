@@ -6,7 +6,7 @@
     <field name="model">sale.order.template</field>
     <field name="inherit_id" ref="sale_management.sale_order_template_view_form"/>
     <field name="arch" type="xml">
-      <xpath expr="/form/sheet/notebook/page/field[@name='sale_order_template_line_ids']/field[@name='product_uom_category_id']" positon="after">
+      <xpath expr="/form[@string='Quotation Template']/sheet/notebook[@name='main_book']/field[@name='sale_order_template_line_ids']/form[@string='Quotation Template Lines']/field[@name='product_uom_category_id']" positon="after">
         <field name='unit_price'/>
       </xpath>
     </field>
