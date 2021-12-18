@@ -4,6 +4,6 @@
 from odoo import fields, models
 
 class ProductPricing(models.Model):
-    _inherits = "sale.order.template"
+    _inherit = "sale.order.template"
 
     des_head = fields.Char(string='Header')
