@@ -8,6 +8,7 @@
         <field name="arch" type="xml">
           <xpath expr="/form/sheet/notebook/page/field[@name='sale_order_template_line_ids']//field[@name='product_uom_qty']" positon="after">
           <field name='unit_price' string='Unit Price'/>
+          </xpath>
         </field>
   </record>
 </data>
