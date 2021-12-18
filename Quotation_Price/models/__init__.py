@@ -1,4 +1,4 @@
 # -*- coding: utf-8 -*-
 # Part of iSoft Solutions Limited.
 
-from . import models
+from . import qoutation_template
