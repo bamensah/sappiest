@@ -5,4 +5,4 @@ from odoo import api, fields, models
 
 class ProductPricing(models.Model):
     _inherits = 'sale.order.line'
-    unit_price = fields.Float(string='Unit Price')
+    des_head = fields.Char(string='Unit Price')
